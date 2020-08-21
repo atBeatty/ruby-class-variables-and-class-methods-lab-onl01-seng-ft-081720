@@ -30,7 +30,7 @@ end
 
 def self.genre_count
   count_hash = {}
-  count_hash.keys = @@genres.uniq
+  count_hash.key = @@genres.uniq
 end
 
 
