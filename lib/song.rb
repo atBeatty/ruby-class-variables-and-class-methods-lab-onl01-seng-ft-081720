@@ -33,11 +33,17 @@ def self.genre_count
   @@genres.uniq.each do |genre|
     count_hash[genre] = @@genres.count(genre)
   end
-
   count_hash
 end
 
 
+def self.genre_count
+  artist_count_hash = {}
+  @@artists.uniq.each do |artist|
+    count_hash[artist] = @@artists.count(artist)
+  end
+  count_hash
+end
 
 
 
