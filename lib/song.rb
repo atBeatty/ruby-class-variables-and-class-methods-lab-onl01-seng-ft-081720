@@ -33,7 +33,6 @@ def self.genre_count
   @@genres.uniq.each do |genre|
     count_hash[genre] = 5
   end
-  end
 
   count_hash
 end
