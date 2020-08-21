@@ -30,7 +30,7 @@ end
 
 def self.genre_count
   count_hash = @@genres.count(@genre)
-  
+
 
 end
 
