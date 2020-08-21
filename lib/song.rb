@@ -29,7 +29,11 @@ def self.genres
 end
 
 def self.genre_count
-  count_hash = @@genres.count(@genre)
+  count_hash = {}
+  @@genres.uniq.each do |genre|
+    if count_hash.empty?
+      count_hash[genre] = @@genres.count(genre)
+  end
 
   count_hash
 end
