@@ -29,7 +29,7 @@ def self.genres
 end
 
 def self.genre_count
-  @@genres.length
+  @@genres.uniq.length
 end
 
 
