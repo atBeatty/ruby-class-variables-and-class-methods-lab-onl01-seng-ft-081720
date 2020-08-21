@@ -9,7 +9,6 @@ def initialize(song, artist, genre)
   @genre=(genre)
 end
 
-def name
 
 
 
