@@ -12,7 +12,7 @@ def initialize(name, artist, genre)
   @artist=(artist)
   @genre=(genre)
 
-  @@artists << @artist
+  @@artists << @artist if @@artists != artist
   @@genres << @genre
 end
 
@@ -20,6 +20,7 @@ def self.count
   @@count
 end
 def self.artists
+
   @@artists
 end
 
