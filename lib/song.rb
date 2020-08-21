@@ -29,9 +29,8 @@ def self.genres
 end
 
 def self.genre_count
-  count_hash = {@genre => @@genres.length}
-  count_hash
-  @@genres
+  count_hash = {}
+  count_hash.keys = @@genres.uniq
 end
 
 
