@@ -30,8 +30,8 @@ end
 
 def self.genre_count
   count_hash = {genre => @@genre.length}
-  
-  
+
+
 end
 
 
