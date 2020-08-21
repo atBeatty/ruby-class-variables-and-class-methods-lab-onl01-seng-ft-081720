@@ -33,6 +33,7 @@ def self.genre_count
   counter = 0
   while counter < @@genres.uniq.length
     count_hash[@@genres[counter] = @@genres.count(@@genres[counter])]
+    counter += 1
   end
   count_hash
 end
