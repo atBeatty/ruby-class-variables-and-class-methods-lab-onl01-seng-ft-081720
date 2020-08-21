@@ -12,7 +12,7 @@ def initialize(name, artist, genre)
   @artist=(artist)
   @genre=(genre)
 
-  @@artists << @artist if @@artists != artist
+  @@artists << @artist if !@@artists.include?(artist)
   @@genres << @genre
 end
 
