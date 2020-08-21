@@ -31,7 +31,7 @@ end
 def self.genre_count
   count_hash = {@genre => @@genres.length}
   count_hash
-
+  @@genres
 end
 
 
