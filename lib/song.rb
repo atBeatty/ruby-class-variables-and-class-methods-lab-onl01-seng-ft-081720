@@ -29,7 +29,12 @@ def self.genres
 end
 
 def self.genre_count
-  @@genres.uniq.length
+  count_hash = {}
+  counter = 0
+  while counter < @@genres.uniq.length
+    count_hash[@@genres[counter] = @@genres.count(@@genres[counter])]
+  end
+  count_hash
 end
 
 
